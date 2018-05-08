@@ -1,0 +1,3 @@
+mosquitto_sub -h BrokerIpAdress -t "MyTopic" -v
+
+mosquitto_pub -h BrokerIpAdress -t 'test/topic' -m 'helloWorld'

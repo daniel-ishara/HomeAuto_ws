@@ -1,0 +1,1 @@
+g++ mqtt_test_1.cpp -o mqtt_test_1 -l paho-mqtt3c

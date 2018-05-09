@@ -1,0 +1,18 @@
+Mosquitto Commands:
+
+List Processes running mosquitto
+ps -ef | grep mosquitto
+
+kill those processes
+sudo kill process_number
+
+Open mosquitto on a terminal where you can view all the events happening
+mosquitto -v
+
+Sub and Pub Exemples:
+
+Subscribe to a topic
+mosquitto_sub -h BrokerIpAdress -i testPublish  -t "MyTopic" -v
+
+Publish to a topic
+mosquitto_pub -h BrokerIpAdress -i testPublish -t myTopic -m 'Hello World'
